@@ -1,0 +1,20 @@
+Passo 1:
+Inicie o robô na posição (0,0,0). As rodas devem estar paradas(o rpm), e a orientação do robô é 0 graus.
+
+Passo 2:
+
+tempo de giro = (mudança na orientação) / (velocidade angular das rodas)
+tempo de giro = (45 graus) / (10 rpm) = 4,5 segundos
+
+Para mover o robô para a posição (4,6,45), você primeiro deve girar o robô em 45 graus enquanto mantém as rodas paradas. Configure as rodas para girar a 10 rpm em direções opostas por 4,5 segundos (tempo necessário para girar 45 graus a 10 rpm).
+
+Passo 3:
+Após o giro, o robô estará orientado em 45 graus. 
+Agora, mova o robô linearmente para frente até a pose (4,6). Configure as rodas para girar a 10 rpm em direções iguais para frente até que o robô tenha percorrido a distância euclidiana entre a posição atual e a desejada:
+distância = √((4-0)^2 + (6-0)^2) = √(4^2 + 6^2) = √(16 + 36) = √52 ≈ 7,21 metros
+
+Passo 4:
+Gire o robô em 45 graus para a direita, de forma que ele esteja orientado em 90 graus.
+
+Passo 5:
+Mova o robô linearmente para frente até a posição final (6,8). Configure as rodas para girar a 10 rpm em direções iguais para frente até que o robô tenha percorrido a distância entre as poses atual e desejada.
